@@ -39,6 +39,17 @@
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .intro img {
+      max-width: 220px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .intro-text {
+      flex: 1;
     }
     footer {
       background-color: #003366;
@@ -67,17 +78,20 @@
 
 <div class="container">
   <section class="intro">
-    <h2>Welcome</h2>
-    <p>
-      Mr. Umesh Chandra Joshi is a seasoned civil service professional with over 35 years of distinguished service
-      in the Government of Uttar Pradesh and the Government of India. He has played a transformative role in public
-      administration, training & development, disaster management, and rural empowerment. 
-    </p>
-    <p>
-      Currently serving as a Master Trainer with the Department of Personnel & Training (DoPT), Mr. Joshi continues
-      to contribute to nation-building through mentoring, capacity building, and knowledge sharing. This portfolio
-      showcases his journey, achievements, and contributions to public service.
-    </p>
+    <img src="images/umesh-joshi.jpg" alt="Umesh Chandra Joshi">
+    <div class="intro-text">
+      <h2>Welcome</h2>
+      <p>
+        Mr. Umesh Chandra Joshi is a seasoned civil service professional with over 35 years of distinguished service
+        in the Government of Uttar Pradesh and the Government of India. He has played a transformative role in public
+        administration, training & development, disaster management, and rural empowerment. 
+      </p>
+      <p>
+        Currently serving as a Master Trainer with the Department of Personnel & Training (DoPT), Mr. Joshi continues
+        to contribute to nation-building through mentoring, capacity building, and knowledge sharing. This portfolio
+        showcases his journey, achievements, and contributions to public service.
+      </p>
+    </div>
   </section>
 </div>
 
