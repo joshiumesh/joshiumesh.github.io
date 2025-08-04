@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Documents</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin: 0.5em 0;
+    }
+    a {
+      text-decoration: none;
+      color: #1a73e8;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Documents</h1>
+  <ul id="doc-list">
+    <!-- JS will populate this -->
+  </ul>
+
+  <script>
+    // List your files here — update this array as you add more files
+    const files = [
+      "ModelProjectReport1.pdf",
+      "ModelProjectReport2.pdf",
+      "modelprojectreport3.pdf",
+      "modelprojectreport4.pdf",
+      "modelprojectreport5.pdf",
+      "help.txt"
+    ];
+
+    const list = document.getElementById("doc-list");
+
+    files.forEach(file => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = `/documents/${file}`;
+      a.textContent = file;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
